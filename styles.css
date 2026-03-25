@@ -379,28 +379,26 @@ nav.scrolled {
 .review-author { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); }
 .review-card .quote-mark { position: absolute; top: 16px; right: 20px; font-family: 'Playfair Display', serif; font-size: 80px; line-height: 1; color: rgba(200,16,46,0.08); }
 
-/* ── EVENTS ── */
+/* ── GALLERY ── */
 .gallery-section { background: var(--dark); }
-.gallery-inner { max-width: 1200px; margin: 0 auto; }
-.collage {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-top: 60px;
-}
-.collage > div { overflow: hidden; }
+.gallery-inner { max-width: 1300px; margin: 0 auto; }
+.collage { display: flex; flex-direction: column; gap: 12px; margin-top: 60px; }
+.collage-row-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px; }
+.collage-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.collage-row-3 > div,
+.collage-row-2 > div { overflow: hidden; }
 .collage img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  object-position: center;
-  display: block;
+  width: 100%; height: auto; display: block;
+  object-fit: cover; object-position: center;
   transition: transform 0.4s ease;
 }
-.collage > div:hover img { transform: scale(1.04); }
-@media (max-width: 700px) {
-  .collage { grid-template-columns: 1fr; }
-  .collage img { height: 300px; }
+.collage-row-3 img { height: 380px; }
+.collage-row-2 img { height: 480px; }
+.collage-row-3 > div:hover img,
+.collage-row-2 > div:hover img { transform: scale(1.03); }
+@media (max-width: 768px) {
+  .collage-row-3, .collage-row-2 { grid-template-columns: 1fr; }
+  .collage-row-3 img, .collage-row-2 img { height: 280px; }
 }
 
 /* ── LOCATION ── */
