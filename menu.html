@@ -24,7 +24,20 @@
       <li><a href="index.html#location">Find Us</a></li>
     </ul>
     <a href="#" class="nav-cta" onclick="openModal(); return false;">Reserve VIP</a>
+    <button class="nav-hamburger" id="hamburger" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
   </nav>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html#about" onclick="closeMobileMenu()">Our Story</a></li>
+      <li><a href="index.html#experience" onclick="closeMobileMenu()">Experience</a></li>
+      <li><a href="gallery.html" onclick="closeMobileMenu()">Gallery</a></li>
+      <li><a href="menu.html" onclick="closeMobileMenu()">Menu</a></li>
+      <li><a href="index.html#location" onclick="closeMobileMenu()">Find Us</a></li>
+      <li><a href="#" class="mobile-reserve" onclick="closeMobileMenu(); openModal(); return false;">Reserve VIP</a></li>
+    </ul>
+  </div>
 
   <!-- MENU HERO -->
   <section class="menu-page-hero">
