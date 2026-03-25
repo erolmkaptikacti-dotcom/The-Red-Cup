@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Red Cup — Where the Night Begins</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo"><span>THE</span> RED <span>CUP</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">Our Story</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="#location">Find Us</a></li>
+    </ul>
+    <a href="#" class="nav-cta" onclick="openModal(); return false;">Reserve VIP</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grain"></div>
+    <div class="hero-lines"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">The Premier Nightlife Experience</p>
+      <h1 class="hero-title">
+        THE<br><span class="red-word glow-pulse">RED</span><br>CUP
+      </h1>
+      <p class="hero-subtitle">Where every night becomes a memory worth keeping.</p>
+      <div class="hero-ctas">
+        <a href="#" class="btn-primary" onclick="openModal(); return false;">Reserve Your Table</a>
+        <a href="#experience" class="btn-outline">Explore the Vibe</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span class="scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- VIBE STRIP -->
+  <div class="vibe-strip">
+    <div class="vibe-strip-inner">
+      <span class="vibe-strip-item">Best Mojitos in the City</span>
+      <span class="vibe-strip-item">VIP Bottle Service</span>
+      <span class="vibe-strip-item">Live DJ Every Weekend</span>
+      <span class="vibe-strip-item">Private Birthday Events</span>
+      <span class="vibe-strip-item">Elevated Bar Food</span>
+      <span class="vibe-strip-item">Family Vibes</span>
+      <span class="vibe-strip-item">Lively Crowd</span>
+      <span class="vibe-strip-item">Best Mojitos in the City</span>
+      <span class="vibe-strip-item">VIP Bottle Service</span>
+      <span class="vibe-strip-item">Live DJ Every Weekend</span>
+      <span class="vibe-strip-item">Private Birthday Events</span>
+      <span class="vibe-strip-item">Elevated Bar Food</span>
+      <span class="vibe-strip-item">Family Vibes</span>
+      <span class="vibe-strip-item">Lively Crowd</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="about">
+      <div class="about-left">
+        <p class="section-label">Our Story</p>
+        <h2 class="about-heading">More than a bar —<br><em>a family.</em></h2>
+        <p class="about-body">The Red Cup was built on something the nightlife world too often forgets: that how you make people feel is everything. From the moment you walk through our doors, you're not a customer — you're family.</p>
+        <p class="about-body">Award-worthy cocktails, fire music, and an energy that moves you. We've crafted every detail of the experience to hit different, every single time.</p>
+        <div class="about-stats">
+          <div class="stat"><div class="stat-num">5★</div><div class="stat-label">Rated</div></div>
+          <div class="stat"><div class="stat-num">$20</div><div class="stat-label">Starting Cover</div></div>
+          <div class="stat"><div class="stat-num">VIP</div><div class="stat-label">Tables Available</div></div>
+        </div>
+      </div>
+      <div class="about-visual">
+        <div class="about-card">
+          <div class="big-quote">"</div>
+          <p class="about-quote-text">"The fact that the owners treat you as family is the reason why it's the best."</p>
+          <span class="about-quote-attr">— Susana Lopez, Guest</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCES -->
+  <section class="section experiences" id="experience">
+    <div class="experiences-inner">
+      <div class="section-header">
+        <p class="section-label" style="justify-content:center;">What We Offer</p>
+        <h2 class="section-title">THE <span>EXPERIENCE</span></h2>
+        <p class="section-sub">Every element crafted to perfection.</p>
+      </div>
+      <div class="exp-grid">
+        <div class="exp-card">
+          <span class="exp-icon">🎵</span>
+          <h3 class="exp-title">Fire Music</h3>
+          <p class="exp-desc">From our resident DJs to curated playlists, the music at The Red Cup hits different. Every night is a new soundtrack.</p>
+          <span class="exp-tag">Live DJ Nights</span>
+        </div>
+        <div class="exp-card">
+          <span class="exp-icon">🥂</span>
+          <h3 class="exp-title">VIP Experience</h3>
+          <p class="exp-desc">Reserved tables, premium bottle service, and treatment that makes you feel like the only person in the room.</p>
+          <span class="exp-tag">Reserve Now</span>
+        </div>
+        <div class="exp-card">
+          <span class="exp-icon">🍹</span>
+          <h3 class="exp-title">Signature Cocktails</h3>
+          <p class="exp-desc">Our mojitos alone are worth the trip. Handcrafted drinks built to impress, every single pour.</p>
+          <span class="exp-tag">Best Mojitos</span>
+        </div>
+        <div class="exp-card">
+          <span class="exp-icon">🍽️</span>
+          <h3 class="exp-title">Food on Point</h3>
+          <p class="exp-desc">Real food worth talking about. Bar bites and full plates that keep the energy going all night.</p>
+          <span class="exp-tag">Kitchen Open Late</span>
+        </div>
+        <div class="exp-card">
+          <span class="exp-icon">🎂</span>
+          <h3 class="exp-title">Birthday & Events</h3>
+          <p class="exp-desc">Your celebration deserves a stage. We make every birthday and private event unforgettable from start to finish.</p>
+          <span class="exp-tag">Book Your Event</span>
+        </div>
+        <div class="exp-card">
+          <span class="exp-icon">🤝</span>
+          <h3 class="exp-title">Family Atmosphere</h3>
+          <p class="exp-desc">Friendly staff, welcoming owners, and a crowd that keeps coming back. This isn't just a bar — it's a community.</p>
+          <span class="exp-tag">Always Welcoming</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIP -->
+  <section class="vip-section">
+    <div class="vip-inner">
+      <div class="vip-badge">✦ Exclusive Access ✦</div>
+      <h2 class="vip-title">Your Night.<br><em>Your Table.</em></h2>
+      <p class="vip-body">Skip the line. Own the room. VIP at The Red Cup means premium bottle service, dedicated staff, and a night you'll be talking about for weeks.</p>
+      <div class="vip-perks">
+        <div class="vip-perk"><div class="vip-perk-dot"></div><span class="vip-perk-text">Reserved premium seating</span></div>
+        <div class="vip-perk"><div class="vip-perk-dot"></div><span class="vip-perk-text">Dedicated bottle service</span></div>
+        <div class="vip-perk"><div class="vip-perk-dot"></div><span class="vip-perk-text">Priority entry — no wait</span></div>
+        <div class="vip-perk"><div class="vip-perk-dot"></div><span class="vip-perk-text">Private event coordination</span></div>
+        <div class="vip-perk"><div class="vip-perk-dot"></div><span class="vip-perk-text">Birthday packages available</span></div>
+        <div class="vip-perk"><div class="vip-perk-dot"></div><span class="vip-perk-text">Personalized experience</span></div>
+      </div>
+      <a href="#" class="btn-primary" onclick="openModal(); return false;">Reserve Your VIP Table</a>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section reviews" id="reviews">
+    <div class="reviews-inner">
+      <div class="section-header">
+        <p class="section-label" style="justify-content:center;">Direct From Our Guests</p>
+        <h2 class="section-title">THEY <span>SAID IT</span></h2>
+        <p class="section-sub">Real nights. Real people. Real love.</p>
+      </div>
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="quote-mark">"</div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"The VIP was nice and everything was good. The food was on point, the music was fire 🔥"</p>
+          <span class="review-author">— Couture Anderson</span>
+        </div>
+        <div class="review-card">
+          <div class="quote-mark">"</div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Hands down the best. The owners treat you as family — that's the reason why it's the best."</p>
+          <span class="review-author">— Susana Lopez</span>
+        </div>
+        <div class="review-card">
+          <div class="quote-mark">"</div>
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Best Mojitos ever. Great vibe — the kind of place you keep coming back to."</p>
+          <span class="review-author">— Shamel Bradley</span>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:36px; font-family:'Cormorant Garamond',serif; font-style:italic; font-size:16px; color:rgba(245,239,230,0.35);">Great music · Friendly staff · Lively crowd · $20–30 per person</p>
+    </div>
+  </section>
+
+  <!-- EVENTS -->
+  <section class="section events-section" id="events">
+    <div class="events-inner">
+      <div class="section-header">
+        <p class="section-label" style="justify-content:center;">Don't Miss Out</p>
+        <h2 class="section-title">UPCOMING <span>EVENTS</span></h2>
+        <p class="section-sub">The calendar is always live at The Red Cup.</p>
+      </div>
+      <div class="events-list">
+        <div class="event-row">
+          <div class="event-date"><div class="event-day">04</div><div class="event-month">APR</div></div>
+          <div class="event-info"><div class="event-info-title">Saturday Night Sessions</div><div class="event-info-desc">Resident DJ · Doors open 9PM · Full bar & kitchen</div></div>
+          <span class="event-badge">Weekly</span>
+        </div>
+        <div class="event-row">
+          <div class="event-date"><div class="event-day">12</div><div class="event-month">APR</div></div>
+          <div class="event-info"><div class="event-info-title">Birthday Takeover Night</div><div class="event-info-desc">Private bookings welcome · VIP tables available · Celebration packages</div></div>
+          <span class="event-badge">Reserve Now</span>
+        </div>
+        <div class="event-row">
+          <div class="event-date"><div class="event-day">19</div><div class="event-month">APR</div></div>
+          <div class="event-info"><div class="event-info-title">Late Night Vibes</div><div class="event-info-desc">Guest DJ · Special cocktail menu · 10PM–3AM</div></div>
+          <span class="event-badge">Featured</span>
+        </div>
+        <div class="event-row">
+          <div class="event-date"><div class="event-day">26</div><div class="event-month">APR</div></div>
+          <div class="event-info"><div class="event-info-title">End of Month Celebration</div><div class="event-info-desc">DJ · Drink specials · Complimentary shots at midnight</div></div>
+          <span class="event-badge">Limited VIP</span>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:52px;">
+        <a href="#" class="btn-primary" onclick="openModal(); return false;">Secure Your Spot</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="location-section" id="location">
+    <div class="location-inner">
+      <div>
+        <p class="section-label">Find Us</p>
+        <h2 class="about-heading" style="font-size:clamp(36px,4vw,52px);">Come through.<br><em>We're expecting you.</em></h2>
+        <div style="margin-top:48px;">
+          <div class="location-info-item">
+            <div class="location-info-icon">📍</div>
+            <div>
+              <div class="location-info-label">Address</div>
+              <div class="location-info-val">495 Monroe Ave<br>Rochester, NY 14607</div>
+            </div>
+          </div>
+          <div class="location-info-item">
+            <div class="location-info-icon">🕙</div>
+            <div>
+              <div class="location-info-label">Hours</div>
+              <div class="location-info-val">Thursday – Sunday<br>9:00 PM – 3:00 AM</div>
+            </div>
+          </div>
+          <div class="location-info-item">
+            <div class="location-info-icon">📞</div>
+            <div>
+              <div class="location-info-label">Reservations & Info</div>
+              <div class="location-info-val">Call or DM us to reserve<br>your table or event space.</div>
+            </div>
+          </div>
+          <div class="location-info-item">
+            <div class="location-info-icon">💰</div>
+            <div>
+              <div class="location-info-label">Price Range</div>
+              <div class="location-info-val">$20 – $30 per person<br>VIP packages available</div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-top:40px;">
+          <a href="#" class="btn-primary" onclick="openModal(); return false;">Reserve Now</a>
+        </div>
+      </div>
+      <div class="map-embed-wrapper">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2919.5819373536986!2d-77.60870852346496!3d43.15003677129042!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d6b3aa2d78c691%3A0x57a30acb9c8e2d0!2s495+Monroe+Ave%2C+Rochester%2C+NY+14607!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+          width="100%" height="420"
+          style="border:0; filter: grayscale(70%) invert(85%) contrast(85%); opacity:0.9;"
+          allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="The Red Cup - 495 Monroe Ave Rochester NY">
+        </iframe>
+        <div class="map-overlay-label">
+          <span>📍</span>
+          <span>495 Monroe Ave · Rochester, NY 14607</span>
+          <a href="https://maps.google.com/?q=495+Monroe+Ave+Rochester+NY+14607" target="_blank" class="map-directions-btn">Get Directions ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">THE <span>RED</span> CUP</div>
+          <p class="footer-tagline">Where every night becomes a memory worth keeping. Family vibes. Fire music. Unforgettable moments.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn">𝕏</a>
+            <a href="#" class="social-btn">IG</a>
+            <a href="#" class="social-btn">FB</a>
+            <a href="#" class="social-btn">TK</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Navigate</div>
+          <ul class="footer-links">
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="#location">Find Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li><a href="#">VIP Tables</a></li>
+            <li><a href="#">Birthday Events</a></li>
+            <li><a href="#">Private Bookings</a></li>
+            <li><a href="#">Bottle Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Hours</div>
+          <ul class="footer-links">
+            <li><a href="#">Thurs – 9PM–3AM</a></li>
+            <li><a href="#">Friday – 9PM–3AM</a></li>
+            <li><a href="#">Saturday – 9PM–3AM</a></li>
+            <li><a href="#">Sunday – 9PM–2AM</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 The Red Cup. All rights reserved.</span>
+        <span>Built for the culture.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOKING MODAL -->
+  <div class="modal-overlay" id="modalOverlay" onclick="handleOverlayClick(event)">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <h2 class="modal-title">Reserve Your Table</h2>
+      <p class="modal-sub">VIP, birthday, or general — we've got you covered.</p>
+      <div class="form-group">
+        <label class="form-label">Your Name</label>
+        <input type="text" class="form-input" placeholder="Full name">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Phone</label>
+          <input type="tel" class="form-input" placeholder="(000) 000-0000">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Date</label>
+          <input type="date" class="form-input">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Party Size</label>
+          <input type="number" class="form-input" placeholder="# of guests" min="1">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Type</label>
+          <select class="form-input">
+            <option>General</option>
+            <option>VIP Table</option>
+            <option>Birthday Event</option>
+            <option>Private Event</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Special Requests</label>
+        <input type="text" class="form-input" placeholder="Anything you need...">
+      </div>
+      <button class="form-submit" onclick="submitForm()">Send My Request</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Red Cup — Food Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo"><span>THE</span> RED <span>CUP</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#about">Our Story</a></li>
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#events">Events</a></li>
+      <li><a href="menu.html" class="active">Menu</a></li>
+      <li><a href="index.html#location">Find Us</a></li>
+    </ul>
+    <a href="#" class="nav-cta" onclick="openModal(); return false;">Reserve VIP</a>
+  </nav>
+
+  <!-- MENU HERO -->
+  <section class="menu-page-hero">
+    <div class="hero-grain"></div>
+    <div class="menu-page-hero-content">
+      <p class="hero-eyebrow">Kitchen Is Open</p>
+      <h1 class="menu-page-title">FOOD <span>MENU</span></h1>
+      <p class="menu-page-sub">Real food. Real good. Late night, every night.</p>
+    </div>
+  </section>
+
+  <!-- VIBE STRIP -->
+  <div class="vibe-strip">
+    <div class="vibe-strip-inner">
+      <span class="vibe-strip-item">$1 Wings</span>
+      <span class="vibe-strip-item">Loaded Nachos</span>
+      <span class="vibe-strip-item">Best Mojitos</span>
+      <span class="vibe-strip-item">Empanadas 3 for $10</span>
+      <span class="vibe-strip-item">Kitchen Open Late</span>
+      <span class="vibe-strip-item">Food on Point</span>
+      <span class="vibe-strip-item">$1 Wings</span>
+      <span class="vibe-strip-item">Loaded Nachos</span>
+      <span class="vibe-strip-item">Best Mojitos</span>
+      <span class="vibe-strip-item">Empanadas 3 for $10</span>
+      <span class="vibe-strip-item">Kitchen Open Late</span>
+      <span class="vibe-strip-item">Food on Point</span>
+    </div>
+  </div>
+
+  <!-- MENU CONTENT -->
+  <section class="section" style="background: var(--black);">
+    <div style="max-width:1200px; margin:0 auto;">
+
+      <!-- SNACKS & STARTERS -->
+      <div class="food-category">
+        <div class="food-cat-label">
+          <span class="food-cat-line"></span>
+          <span class="food-cat-title">Snacks &amp; Starters</span>
+          <span class="food-cat-line"></span>
+        </div>
+        <div class="food-grid">
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Mozzarella Sticks</span>
+              <span class="food-price">$11</span>
+            </div>
+            <span class="food-detail">7 pieces · golden fried</span>
+          </div>
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Fried Ravioli</span>
+              <span class="food-price">$11</span>
+            </div>
+            <span class="food-detail">8 pieces · crispy &amp; hot</span>
+          </div>
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Loaded Nachos</span>
+              <span class="food-price">$8</span>
+            </div>
+            <span class="food-detail">Fully loaded</span>
+          </div>
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Chili &amp; Tortilla Chips</span>
+              <span class="food-price">$8</span>
+            </div>
+            <span class="food-detail">Hearty chili · side of chips</span>
+          </div>
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Buffalo Chicken Dip</span>
+              <span class="food-price">$8</span>
+            </div>
+            <span class="food-detail">Served with tortilla chips</span>
+          </div>
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Pretzel</span>
+              <span class="food-price">$4</span>
+            </div>
+            <span class="food-detail">With a side of nacho cheese</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- HANDHELDS -->
+      <div class="food-category">
+        <div class="food-cat-label">
+          <span class="food-cat-line"></span>
+          <span class="food-cat-title">Handhelds</span>
+          <span class="food-cat-line"></span>
+        </div>
+        <div class="food-grid">
+          <div class="food-card food-card-wings" style="grid-column: span 1;">
+            <div class="food-card-top">
+              <span class="food-name">Empanadas</span>
+              <span class="food-price">3 for $10</span>
+            </div>
+            <span class="food-detail">Buffalo chicken · Beef &amp; cheese · Jerk chicken</span>
+          </div>
+          <div class="food-card food-card-wings" style="grid-column: span 1;">
+            <div class="food-card-top">
+              <span class="food-name">Egg Rolls</span>
+              <span class="food-price">3 for $10</span>
+            </div>
+            <span class="food-detail">Beef · Veggie · Shrimp</span>
+          </div>
+          <div class="food-card" style="grid-column: span 1; visibility: hidden;"></div>
+        </div>
+      </div>
+
+      <!-- MAINS -->
+      <div class="food-category">
+        <div class="food-cat-label">
+          <span class="food-cat-line"></span>
+          <span class="food-cat-title">Mains</span>
+          <span class="food-cat-line"></span>
+        </div>
+        <div class="food-grid">
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Chicken Fingers &amp; Fries</span>
+              <span class="food-price">$15</span>
+            </div>
+            <span class="food-detail">Crispy tenders · seasoned fries</span>
+          </div>
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Chicken Sandwich &amp; Fries</span>
+              <span class="food-price">$15</span>
+            </div>
+            <span class="food-detail">Stacked &amp; satisfying</span>
+          </div>
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Burger &amp; Fries</span>
+              <span class="food-price">$15</span>
+            </div>
+            <span class="food-detail">Classic done right</span>
+          </div>
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Pizza + 5 Wings</span>
+              <span class="food-price">$15</span>
+            </div>
+            <span class="food-detail">Medium crust pizza · 5 wings</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- WINGS -->
+      <div class="food-category">
+        <div class="food-cat-label">
+          <span class="food-cat-line"></span>
+          <span class="food-cat-title">Wings</span>
+          <span class="food-cat-line"></span>
+        </div>
+        <div class="food-grid">
+          <div class="food-card food-card-wings">
+            <div class="food-card-top">
+              <span class="food-name">$1 Wings</span>
+              <span class="food-price">$1 each</span>
+            </div>
+            <span class="food-detail" style="margin-bottom:16px; display:block;">7 sauces to choose from:</span>
+            <div class="wings-sauces">
+              <span class="sauce-tag">Garlic</span>
+              <span class="sauce-tag">Buffalo Parm Garlic</span>
+              <span class="sauce-tag">Parm</span>
+              <span class="sauce-tag">Buffalo Mild</span>
+              <span class="sauce-tag sauce-tag-red">Country</span>
+              <span class="sauce-tag sauce-tag-red">Sweet Boss Sauce</span>
+              <span class="sauce-tag sauce-tag-red">Barbecue House Sauce</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOR THE TABLE -->
+      <div class="food-category">
+        <div class="food-cat-label">
+          <span class="food-cat-line"></span>
+          <span class="food-cat-title">For the Table</span>
+          <span class="food-cat-line"></span>
+        </div>
+        <div class="food-grid">
+          <div class="food-card food-card-wings food-card-sampler">
+            <div class="food-card-top">
+              <span class="food-name">The Sampler</span>
+              <span class="food-price">$18</span>
+            </div>
+            <span class="food-detail">4 Mozzarella Sticks · 4 Chicken Fingers · 4 Fried Ravioli — the best of everything, one plate.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- DIETARY NOTICE -->
+      <div class="menu-notice">
+        <span class="menu-notice-icon">⚠</span>
+        <span>Please notify your server of any dietary restrictions or allergies before ordering.</span>
+      </div>
+
+      <div style="text-align:center; margin-top:60px;">
+        <a href="#" class="btn-primary" onclick="openModal(); return false;">Reserve Your Table</a>
+        &nbsp;&nbsp;
+        <a href="index.html" class="btn-outline">Back to Home</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">THE <span>RED</span> CUP</div>
+          <p class="footer-tagline">Where every night becomes a memory worth keeping. Family vibes. Fire music. Unforgettable moments.</p>
+          <div class="footer-social">
+            <a href="#" class="social-btn">𝕏</a>
+            <a href="#" class="social-btn">IG</a>
+            <a href="#" class="social-btn">FB</a>
+            <a href="#" class="social-btn">TK</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Navigate</div>
+          <ul class="footer-links">
+            <li><a href="index.html#about">Our Story</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#events">Events</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="index.html#location">Find Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Services</div>
+          <ul class="footer-links">
+            <li><a href="#">VIP Tables</a></li>
+            <li><a href="#">Birthday Events</a></li>
+            <li><a href="#">Private Bookings</a></li>
+            <li><a href="#">Bottle Service</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Hours</div>
+          <ul class="footer-links">
+            <li><a href="#">Thurs – 9PM–3AM</a></li>
+            <li><a href="#">Friday – 9PM–3AM</a></li>
+            <li><a href="#">Saturday – 9PM–3AM</a></li>
+            <li><a href="#">Sunday – 9PM–2AM</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 The Red Cup. All rights reserved.</span>
+        <span>Built for the culture.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOKING MODAL -->
+  <div class="modal-overlay" id="modalOverlay" onclick="handleOverlayClick(event)">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <h2 class="modal-title">Reserve Your Table</h2>
+      <p class="modal-sub">VIP, birthday, or general — we've got you covered.</p>
+      <div class="form-group">
+        <label class="form-label">Your Name</label>
+        <input type="text" class="form-input" placeholder="Full name">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Phone</label>
+          <input type="tel" class="form-input" placeholder="(000) 000-0000">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Date</label>
+          <input type="date" class="form-input">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Party Size</label>
+          <input type="number" class="form-input" placeholder="# of guests" min="1">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Type</label>
+          <select class="form-input">
+            <option>General</option>
+            <option>VIP Table</option>
+            <option>Birthday Event</option>
+            <option>Private Event</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Special Requests</label>
+        <input type="text" class="form-input" placeholder="Anything you need...">
+      </div>
+      <button class="form-submit" onclick="submitForm()">Send My Request</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
