@@ -25,6 +25,7 @@ body {
   font-family: 'DM Sans', sans-serif;
   font-weight: 300;
   overflow-x: hidden;
+  cursor: auto;
 }
 
 /* ── NAV ── */
