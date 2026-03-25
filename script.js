@@ -3,6 +3,22 @@
    ============================================= */
 
 
+// ── Mobile Menu ──
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+if (hamburger && mobileMenu) {
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+  });
+}
+function closeMobileMenu() {
+  if (hamburger) hamburger.classList.remove('open');
+  if (mobileMenu) mobileMenu.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
 // ── Nav scroll ──
 const nav = document.getElementById('navbar');
 if (nav) {
