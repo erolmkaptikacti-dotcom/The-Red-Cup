@@ -196,13 +196,7 @@ nav.scrolled {
   letter-spacing: 2px; line-height: 0.88; color: var(--white);
   animation: fadeSlideUp 1s ease 0.5s both;
 }
-.hero-title .red-word { color: var(--red); position: relative; }
-.hero-title .red-word::after {
-  content: '';
-  position: absolute; bottom: -4px; left: 0; right: 0; height: 3px;
-  background: var(--red);
-  box-shadow: 0 0 20px var(--red), 0 0 40px rgba(200,16,46,0.5);
-}
+.hero-title .red-word { color: var(--red); }
 .hero-subtitle {
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(16px, 2.5vw, 22px);
