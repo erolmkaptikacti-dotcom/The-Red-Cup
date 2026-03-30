@@ -3,15 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>The Red Cup — Food Menu</title>
+  <title>The Red Cup — Specialty Drink Menu</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Bebas+Neue&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-
 
   <!-- NAV -->
   <nav id="navbar">
@@ -20,8 +18,8 @@
       <li><a href="index.html#about">Our Story</a></li>
       <li><a href="index.html#experience">Experience</a></li>
       <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="menu.html" class="active">Menu</a></li>
-      <li><a href="drinks.html">Drinks</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="drinks.html" class="active">Drinks</a></li>
       <li><a href="index.html#location">Find Us</a></li>
     </ul>
     <a href="#" class="nav-cta" onclick="openModal(); return false;">Reserve VIP</a>
@@ -41,211 +39,198 @@
     </ul>
   </div>
 
-  <!-- MENU HERO -->
+  <!-- DRINKS HERO -->
   <section class="menu-page-hero">
     <div class="hero-grain"></div>
     <div class="menu-page-hero-content">
-      <p class="hero-eyebrow">Kitchen Is Open</p>
-      <h1 class="menu-page-title">FOOD <span>MENU</span></h1>
-      <p class="menu-page-sub">Real food. Real good. Late night, every night.</p>
+      <p class="hero-eyebrow">Crafted with Care</p>
+      <h1 class="menu-page-title">SPECIALTY <span>DRINKS</span></h1>
+      <p class="menu-page-sub">Signature cocktails made for the night.</p>
     </div>
   </section>
 
   <!-- VIBE STRIP -->
   <div class="vibe-strip">
     <div class="vibe-strip-inner">
-      <span class="vibe-strip-item">$1 Wings</span>
-      <span class="vibe-strip-item">Loaded Nachos</span>
-      <span class="vibe-strip-item">Best Mojitos</span>
-      <span class="vibe-strip-item">Empanadas 3 for $10</span>
-      <span class="vibe-strip-item">Kitchen Open Late</span>
-      <span class="vibe-strip-item">Food on Point</span>
-      <span class="vibe-strip-item">$1 Wings</span>
-      <span class="vibe-strip-item">Loaded Nachos</span>
-      <span class="vibe-strip-item">Best Mojitos</span>
-      <span class="vibe-strip-item">Empanadas 3 for $10</span>
-      <span class="vibe-strip-item">Kitchen Open Late</span>
-      <span class="vibe-strip-item">Food on Point</span>
+      <span class="vibe-strip-item">Specialty Cocktails</span>
+      <span class="vibe-strip-item">Espresso Martini</span>
+      <span class="vibe-strip-item">Jungle Punch</span>
+      <span class="vibe-strip-item">Blue Tsunami</span>
+      <span class="vibe-strip-item">Watermelon Crawl</span>
+      <span class="vibe-strip-item">Crafted Drinks</span>
+      <span class="vibe-strip-item">Specialty Cocktails</span>
+      <span class="vibe-strip-item">Espresso Martini</span>
+      <span class="vibe-strip-item">Jungle Punch</span>
+      <span class="vibe-strip-item">Blue Tsunami</span>
+      <span class="vibe-strip-item">Watermelon Crawl</span>
+      <span class="vibe-strip-item">Crafted Drinks</span>
     </div>
   </div>
 
-  <!-- MENU CONTENT -->
+  <!-- DRINKS CONTENT -->
   <section class="section" style="background: var(--black);">
     <div style="max-width:1200px; margin:0 auto;">
 
-      <!-- SNACKS & STARTERS -->
+      <!-- WHISKEY & BOURBON -->
       <div class="food-category">
         <div class="food-cat-label">
           <span class="food-cat-line"></span>
-          <span class="food-cat-title">Snacks &amp; Starters</span>
+          <span class="food-cat-title">Whiskey &amp; Bourbon</span>
           <span class="food-cat-line"></span>
         </div>
         <div class="food-grid">
           <div class="food-card">
             <div class="food-card-top">
-              <span class="food-name">Mozzarella Sticks</span>
-              <span class="food-price">$11</span>
-            </div>
-            <span class="food-detail">7 pieces · golden fried</span>
-          </div>
-          <div class="food-card">
-            <div class="food-card-top">
-              <span class="food-name">Fried Ravioli</span>
-              <span class="food-price">$11</span>
-            </div>
-            <span class="food-detail">8 pieces · crispy &amp; hot</span>
-          </div>
-          <div class="food-card">
-            <div class="food-card-top">
-              <span class="food-name">Loaded Nachos</span>
-              <span class="food-price">$8</span>
-            </div>
-            <span class="food-detail">Fully loaded</span>
-          </div>
-          <div class="food-card">
-            <div class="food-card-top">
-              <span class="food-name">Chili &amp; Tortilla Chips</span>
-              <span class="food-price">$8</span>
-            </div>
-            <span class="food-detail">Hearty chili · side of chips</span>
-          </div>
-          <div class="food-card">
-            <div class="food-card-top">
-              <span class="food-name">Buffalo Chicken Dip</span>
-              <span class="food-price">$8</span>
-            </div>
-            <span class="food-detail">Served with tortilla chips</span>
-          </div>
-          <div class="food-card">
-            <div class="food-card-top">
-              <span class="food-name">Pretzel</span>
-              <span class="food-price">$4</span>
-            </div>
-            <span class="food-detail">With a side of nacho cheese</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- HANDHELDS -->
-      <div class="food-category">
-        <div class="food-cat-label">
-          <span class="food-cat-line"></span>
-          <span class="food-cat-title">Handhelds</span>
-          <span class="food-cat-line"></span>
-        </div>
-        <div class="food-grid">
-          <div class="food-card food-card-wings" style="grid-column: span 1;">
-            <div class="food-card-top">
-              <span class="food-name">Empanadas</span>
-              <span class="food-price">3 for $10</span>
-            </div>
-            <span class="food-detail">Buffalo chicken · Beef &amp; cheese · Jerk chicken</span>
-          </div>
-          <div class="food-card food-card-wings" style="grid-column: span 1;">
-            <div class="food-card-top">
-              <span class="food-name">Egg Rolls</span>
-              <span class="food-price">3 for $10</span>
-            </div>
-            <span class="food-detail">Beef · Veggie · Shrimp</span>
-          </div>
-          <div class="food-card" style="grid-column: span 1; visibility: hidden;"></div>
-        </div>
-      </div>
-
-      <!-- MAINS -->
-      <div class="food-category">
-        <div class="food-cat-label">
-          <span class="food-cat-line"></span>
-          <span class="food-cat-title">Mains</span>
-          <span class="food-cat-line"></span>
-        </div>
-        <div class="food-grid">
-          <div class="food-card">
-            <div class="food-card-top">
-              <span class="food-name">Chicken Fingers &amp; Fries</span>
+              <span class="food-name">Bourbon Smash</span>
               <span class="food-price">$15</span>
             </div>
-            <span class="food-detail">Crispy tenders · seasoned fries</span>
+            <span class="food-detail">Buffalo Trace Bourbon · Peach Schnapps · Orange Juice · Grenadine</span>
           </div>
           <div class="food-card">
             <div class="food-card-top">
-              <span class="food-name">Chicken Sandwich &amp; Fries</span>
+              <span class="food-name">New York Sour</span>
               <span class="food-price">$15</span>
             </div>
-            <span class="food-detail">Stacked &amp; satisfying</span>
+            <span class="food-detail">Woodforest Bourbon · Simple Syrup · Lemon Juice · Pinot Noir</span>
           </div>
           <div class="food-card">
             <div class="food-card-top">
-              <span class="food-name">Burger &amp; Fries</span>
-              <span class="food-price">$15</span>
+              <span class="food-name">Watermelon Crawl</span>
+              <span class="food-price">$13</span>
             </div>
-            <span class="food-detail">Classic done right</span>
-          </div>
-          <div class="food-card">
-            <div class="food-card-top">
-              <span class="food-name">Pizza + 5 Wings</span>
-              <span class="food-price">$15</span>
-            </div>
-            <span class="food-detail">Medium crust pizza · 5 wings</span>
+            <span class="food-detail">Whiskey · Watermelon Liqueur · Pineapple Juice · Orange Juice · Amaretto Liqueur · Grenadine</span>
           </div>
         </div>
       </div>
 
-      <!-- WINGS -->
+      <!-- VODKA COCKTAILS -->
       <div class="food-category">
         <div class="food-cat-label">
           <span class="food-cat-line"></span>
-          <span class="food-cat-title">Wings</span>
+          <span class="food-cat-title">Vodka Cocktails</span>
           <span class="food-cat-line"></span>
         </div>
         <div class="food-grid">
-          <div class="food-card food-card-wings">
+          <div class="food-card">
             <div class="food-card-top">
-              <span class="food-name">$1 Wings</span>
-              <span class="food-price">$1 each</span>
+              <span class="food-name">Pink Cosmo</span>
+              <span class="food-price">$10</span>
             </div>
-            <span class="food-detail" style="margin-bottom:16px; display:block;">7 sauces to choose from:</span>
-            <div class="wings-sauces">
-              <span class="sauce-tag">Garlic</span>
-              <span class="sauce-tag">Buffalo Parm Garlic</span>
-              <span class="sauce-tag">Parm</span>
-              <span class="sauce-tag">Buffalo Mild</span>
-              <span class="sauce-tag sauce-tag-red">Country</span>
-              <span class="sauce-tag sauce-tag-red">Sweet Boss Sauce</span>
-              <span class="sauce-tag sauce-tag-red">Barbecue House Sauce</span>
+            <span class="food-detail">Belvedere Vodka · Triple Sec · Lime Juice · Splash Of Cranberry</span>
+          </div>
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Espresso Martini</span>
+              <span class="food-price">$16</span>
             </div>
+            <span class="food-detail">Espresso Mix · Bailey's · Vodka · Simple Syrup</span>
+          </div>
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Daqui-Rye</span>
+              <span class="food-price">$10</span>
+            </div>
+            <span class="food-detail">Belvedere Vodka · Lime Juice · Simple Syrup · Splash of Sour Mix</span>
+          </div>
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Sour Patch</span>
+              <span class="food-price">$12</span>
+            </div>
+            <span class="food-detail">Watermelon Liqueur · Melon Liqueur · Raspberry Vodka · Simple Syrup · Lemon Juice</span>
           </div>
         </div>
       </div>
 
-      <!-- FOR THE TABLE -->
+      <!-- RUM & TROPICAL -->
       <div class="food-category">
         <div class="food-cat-label">
           <span class="food-cat-line"></span>
-          <span class="food-cat-title">For the Table</span>
+          <span class="food-cat-title">Rum &amp; Tropical</span>
           <span class="food-cat-line"></span>
         </div>
         <div class="food-grid">
-          <div class="food-card food-card-wings food-card-sampler">
+          <div class="food-card">
             <div class="food-card-top">
-              <span class="food-name">The Sampler</span>
-              <span class="food-price">$18</span>
+              <span class="food-name">Nega Dream</span>
+              <span class="food-price">$10</span>
             </div>
-            <span class="food-detail">4 Mozzarella Sticks · 4 Chicken Fingers · 4 Fried Ravioli — the best of everything, one plate.</span>
+            <span class="food-detail">Coconut Rum · Orange Juice · Simple Syrup · Grenadine</span>
+          </div>
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Malibu Bay Breeze</span>
+              <span class="food-price">$12</span>
+            </div>
+            <span class="food-detail">Peach, Mango, or Strawberry Malibu · Pineapple Juice · Cranberry Juice</span>
+          </div>
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Blue Tsunami</span>
+              <span class="food-price">$12</span>
+            </div>
+            <span class="food-detail">Vodka · Coconut Rum · Blue Curacao · Lime Juice · Lemon Juice · Pineapple Juice</span>
+          </div>
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Hawaiian Martini</span>
+              <span class="food-price">$10</span>
+            </div>
+            <span class="food-detail">Vodka · Coconut Rum · Triple Sec · Pineapple Juice · Splash of Grenadine</span>
+          </div>
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Rainbow Paradise</span>
+              <span class="food-price">$10</span>
+            </div>
+            <span class="food-detail">Pineapple or Orange Juice · Grenadine · Vodka · Blue Curacao</span>
+          </div>
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Jungle Punch</span>
+              <span class="food-price">$12</span>
+            </div>
+            <span class="food-detail">Vodka · Don Q Rum · Melon Liqueur · Lemon Juice · Orange Juice · Pineapple Juice</span>
           </div>
         </div>
       </div>
 
-      <!-- DIETARY NOTICE -->
+      <!-- CLASSICS & SIGNATURES -->
+      <div class="food-category">
+        <div class="food-cat-label">
+          <span class="food-cat-line"></span>
+          <span class="food-cat-title">Classics &amp; Signatures</span>
+          <span class="food-cat-line"></span>
+        </div>
+        <div class="food-grid">
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">French 75</span>
+              <span class="food-price">$15</span>
+            </div>
+            <span class="food-detail">Gin · Simple Syrup · Lemon Juice · Champagne</span>
+          </div>
+          <div class="food-card">
+            <div class="food-card-top">
+              <span class="food-name">Dirty Shirley</span>
+              <span class="food-price">$10</span>
+            </div>
+            <span class="food-detail">Jack Daniels · Grenadine · Sprite · Maraschino Cherries</span>
+          </div>
+          <div class="food-card" style="visibility: hidden;"></div>
+        </div>
+      </div>
+
+      <!-- NOTICE -->
       <div class="menu-notice">
-        <span class="menu-notice-icon">⚠</span>
-        <span>Please notify your server of any dietary restrictions or allergies before ordering.</span>
+        <span class="menu-notice-icon">🍹</span>
+        <span>Please drink responsibly. Must be 21+ to order alcoholic beverages. Notify your server of any allergies.</span>
       </div>
 
       <div style="text-align:center; margin-top:60px;">
         <a href="#" class="btn-primary" onclick="openModal(); return false;">Reserve Your Table</a>
         &nbsp;&nbsp;
-        <a href="index.html" class="btn-outline">Back to Home</a>
+        <a href="menu.html" class="btn-outline">Food Menu</a>
       </div>
 
     </div>
