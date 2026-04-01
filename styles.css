@@ -170,7 +170,7 @@ nav.scrolled {
 }
 
 /* ── VIBE STRIP ── */
-.vibe-strip { background: var(--red); padding: 16px 0; overflow: hidden; }
+.vibe-strip { background: var(--red); padding: 16px 0; overflow: hidden; margin-top: 48px; }
 .vibe-strip-inner {
   display: flex; gap: 60px;
   animation: marquee 20s linear infinite;
@@ -190,7 +190,7 @@ nav.scrolled {
 
 /* ── HERO ── */
 .hero {
-  position: relative; height: 100vh; min-height: 700px;
+  position: relative; height: 110vh; min-height: 800px;
   display: flex; align-items: center; justify-content: center;
   overflow: hidden; background: var(--black);
 }
@@ -214,7 +214,7 @@ nav.scrolled {
   );
 }
 .hero-content {
-  position: relative; z-index: 2; text-align: center; padding: 0 20px;
+  position: relative; z-index: 2; text-align: center; padding: 80px 20px 0;
   animation: heroFadeIn 1.6s ease forwards;
 }
 @keyframes heroFadeIn {
