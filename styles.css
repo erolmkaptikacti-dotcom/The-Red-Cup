@@ -170,7 +170,7 @@ nav.scrolled {
 }
 
 /* ── VIBE STRIP ── */
-.vibe-strip { background: var(--red); padding: 16px 0; overflow: hidden; margin-top: 48px; }
+.vibe-strip { background: var(--red); padding: 16px 0; overflow: hidden; }
 .vibe-strip-inner {
   display: flex; gap: 60px;
   animation: marquee 20s linear infinite;
@@ -192,7 +192,7 @@ nav.scrolled {
 .hero {
   position: relative; height: 110vh; min-height: 800px;
   display: flex; align-items: center; justify-content: center;
-  overflow: hidden; background: var(--black);
+  overflow: hidden; background: var(--black); padding-bottom: 48px;
 }
 .hero-bg {
   position: absolute; inset: 0;
