@@ -126,7 +126,7 @@ function addWings() {
   if (!cards.length) return;
   cards.forEach(function(card) {
     if (card.style.visibility === 'hidden') return;
-    if (card.classList.contains('food-card-wings')) return;
+    if (card.dataset.orderCustom) return;
     var nameEl = card.querySelector('.food-name');
     var priceEl = card.querySelector('.food-price');
     if (!nameEl || !priceEl) return;
