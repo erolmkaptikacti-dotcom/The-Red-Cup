@@ -188,19 +188,31 @@
             </div>
             <span class="food-detail">Medium crust pizza · 5 wings</span>
           </div>
-          <div class="food-card">
+          <div class="food-card food-card-wings" data-order-custom="birria">
             <div class="food-card-top">
-              <span class="food-name">Chicken Birria Tacos</span>
+              <span class="food-name">Birria Tacos</span>
               <span class="food-price">4 for $15</span>
             </div>
-            <span class="food-detail">Cheese · cilantro · onions · sliced lime</span>
-          </div>
-          <div class="food-card">
-            <div class="food-card-top">
-              <span class="food-name">Beef Birria Tacos</span>
-              <span class="food-price">4 for $15</span>
+            <span class="food-detail" style="margin-bottom:16px; display:block;">Cheese · cilantro · onions · sliced lime</span>
+            <div class="birria-order-row">
+              <div class="birria-type-ctrl">
+                <span class="birria-type-label">Chicken</span>
+                <div class="qty-ctrl">
+                  <button class="qty-btn" onclick="changeBirriaQty('chicken', -1)">&#8722;</button>
+                  <span class="birria-qty-num" id="birriaChickenQty">2</span>
+                  <button class="qty-btn" onclick="changeBirriaQty('chicken', 1)">+</button>
+                </div>
+              </div>
+              <div class="birria-type-ctrl">
+                <span class="birria-type-label">Beef</span>
+                <div class="qty-ctrl">
+                  <button class="qty-btn" onclick="changeBirriaQty('beef', -1)">&#8722;</button>
+                  <span class="birria-qty-num" id="birriaBeefQty">2</span>
+                  <button class="qty-btn" onclick="changeBirriaQty('beef', 1)">+</button>
+                </div>
+              </div>
+              <button class="add-btn" onclick="addBirria()">+ Add to Order</button>
             </div>
-            <span class="food-detail">Cheese · cilantro · onions · sliced lime</span>
           </div>
         </div>
       </div>

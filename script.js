@@ -57,6 +57,8 @@ document.addEventListener('keydown', e => {
 // ── Order / Cart System ──
 var cart = [];
 var wingsQty = 6;
+var birriaChickenQty = 2;
+var birriaBeefQty = 2;
 
 function addItem(name, price) {
   var existing = cart.find(function(i) { return i.name === name; });
@@ -94,6 +96,39 @@ function flashCart() {
   btn.classList.remove('pop');
   void btn.offsetWidth;
   btn.classList.add('pop');
+}
+
+function changeBirriaQty(type, delta) {
+  var newChicken = birriaChickenQty;
+  var newBeef = birriaBeefQty;
+  if (type === 'chicken') {
+    newChicken = birriaChickenQty + delta;
+    newBeef = 4 - newChicken;
+  } else {
+    newBeef = birriaBeefQty + delta;
+    newChicken = 4 - newBeef;
+  }
+  if (newChicken < 0 || newBeef < 0) return;
+  birriaChickenQty = newChicken;
+  birriaBeefQty = newBeef;
+  var cEl = document.getElementById('birriaChickenQty');
+  var bEl = document.getElementById('birriaBeefQty');
+  if (cEl) cEl.textContent = birriaChickenQty;
+  if (bEl) bEl.textContent = birriaBeefQty;
+}
+
+function addBirria() {
+  var parts = [];
+  if (birriaChickenQty > 0) parts.push(birriaChickenQty + ' Chicken');
+  if (birriaBeefQty > 0) parts.push(birriaBeefQty + ' Beef');
+  var name = 'Birria Tacos (' + parts.join(', ') + ')';
+  addItem(name, 15);
+  birriaChickenQty = 2;
+  birriaBeefQty = 2;
+  var cEl = document.getElementById('birriaChickenQty');
+  var bEl = document.getElementById('birriaBeefQty');
+  if (cEl) cEl.textContent = 2;
+  if (bEl) bEl.textContent = 2;
 }
 
 function changeWingsQty(delta) {
