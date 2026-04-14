@@ -131,6 +131,43 @@ function addBirria() {
   if (bEl) bEl.textContent = 2;
 }
 
+var empBuffaloQty = 1;
+var empBeefQty = 1;
+var empJerkQty = 1;
+
+function changeEmpQty(type, delta) {
+  var current = { buffalo: empBuffaloQty, beef: empBeefQty, jerk: empJerkQty };
+  var newVal = current[type] + delta;
+  var total = empBuffaloQty + empBeefQty + empJerkQty;
+  if (newVal < 0 || total + delta > 3) return;
+  if (type === 'buffalo') empBuffaloQty = newVal;
+  else if (type === 'beef') empBeefQty = newVal;
+  else empJerkQty = newVal;
+  var bEl = document.getElementById('empBuffaloQty');
+  var beEl = document.getElementById('empBeefQty');
+  var jEl = document.getElementById('empJerkQty');
+  if (bEl) bEl.textContent = empBuffaloQty;
+  if (beEl) beEl.textContent = empBeefQty;
+  if (jEl) jEl.textContent = empJerkQty;
+}
+
+function addEmpanadas() {
+  var total = empBuffaloQty + empBeefQty + empJerkQty;
+  if (total !== 3) { alert('Please select exactly 3 empanadas total.'); return; }
+  var parts = [];
+  if (empBuffaloQty > 0) parts.push(empBuffaloQty + ' Buffalo Chicken');
+  if (empBeefQty > 0) parts.push(empBeefQty + ' Beef & Cheese');
+  if (empJerkQty > 0) parts.push(empJerkQty + ' Jerk Chicken');
+  addItem('Empanadas (' + parts.join(', ') + ')', 10);
+  empBuffaloQty = 1; empBeefQty = 1; empJerkQty = 1;
+  var bEl = document.getElementById('empBuffaloQty');
+  var beEl = document.getElementById('empBeefQty');
+  var jEl = document.getElementById('empJerkQty');
+  if (bEl) bEl.textContent = 1;
+  if (beEl) beEl.textContent = 1;
+  if (jEl) jEl.textContent = 1;
+}
+
 function changeWingsQty(delta) {
   wingsQty = Math.max(1, wingsQty + delta);
   var el = document.getElementById('wingsQty');

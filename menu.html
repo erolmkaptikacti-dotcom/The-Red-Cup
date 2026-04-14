@@ -169,12 +169,39 @@
             </div>
             <span class="food-detail">Medium crust pizza · 5 wings</span>
           </div>
-          <div class="food-card">
+          <div class="food-card food-card-wings" data-order-custom="empanadas">
             <div class="food-card-top">
               <span class="food-name">Empanadas</span>
               <span class="food-price">3 for $10</span>
             </div>
-            <span class="food-detail">Buffalo chicken · Beef &amp; cheese · Jerk chicken</span>
+            <span class="food-detail" style="margin-bottom:16px; display:block;">Choose your 3 flavors:</span>
+            <div class="birria-order-row">
+              <div class="birria-type-ctrl">
+                <span class="birria-type-label">Buffalo Chicken</span>
+                <div class="qty-ctrl">
+                  <button class="qty-btn" onclick="changeEmpQty('buffalo', -1)">&#8722;</button>
+                  <span class="birria-qty-num" id="empBuffaloQty">1</span>
+                  <button class="qty-btn" onclick="changeEmpQty('buffalo', 1)">+</button>
+                </div>
+              </div>
+              <div class="birria-type-ctrl">
+                <span class="birria-type-label">Beef &amp; Cheese</span>
+                <div class="qty-ctrl">
+                  <button class="qty-btn" onclick="changeEmpQty('beef', -1)">&#8722;</button>
+                  <span class="birria-qty-num" id="empBeefQty">1</span>
+                  <button class="qty-btn" onclick="changeEmpQty('beef', 1)">+</button>
+                </div>
+              </div>
+              <div class="birria-type-ctrl">
+                <span class="birria-type-label">Jerk Chicken</span>
+                <div class="qty-ctrl">
+                  <button class="qty-btn" onclick="changeEmpQty('jerk', -1)">&#8722;</button>
+                  <span class="birria-qty-num" id="empJerkQty">1</span>
+                  <button class="qty-btn" onclick="changeEmpQty('jerk', 1)">+</button>
+                </div>
+              </div>
+              <button class="add-btn" onclick="addEmpanadas()">+ Add to Order</button>
+            </div>
           </div>
           <div class="food-card food-card-wings" data-order-custom="birria">
             <div class="food-card-top">
