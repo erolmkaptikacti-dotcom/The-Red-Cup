@@ -216,12 +216,7 @@ function addWings() {
 
 // Order Modal
 function openOrderModal() {
-  var overlay = document.getElementById('orderOverlay');
-  if (!overlay) return;
-  renderCartItems();
-  overlay.classList.add('open');
-  document.body.style.overflow = 'hidden';
-  goToStep(1);
+  window.open('https://online.skytab.com/b68be6244f94015a8ece60906197687f', '_blank');
 }
 
 function closeOrderModal() {
