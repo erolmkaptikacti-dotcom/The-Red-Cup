@@ -174,34 +174,8 @@
               <span class="food-name">Empanadas</span>
               <span class="food-price">3 for $10</span>
             </div>
-            <span class="food-detail" style="margin-bottom:16px; display:block;">Choose your 3 flavors:</span>
-            <div class="birria-order-row">
-              <div class="birria-type-ctrl">
-                <span class="birria-type-label">Buffalo Chicken</span>
-                <div class="qty-ctrl">
-                  <button class="qty-btn" onclick="changeEmpQty('buffalo', -1)">&#8722;</button>
-                  <span class="birria-qty-num" id="empBuffaloQty">1</span>
-                  <button class="qty-btn" onclick="changeEmpQty('buffalo', 1)">+</button>
-                </div>
-              </div>
-              <div class="birria-type-ctrl">
-                <span class="birria-type-label">Beef &amp; Cheese</span>
-                <div class="qty-ctrl">
-                  <button class="qty-btn" onclick="changeEmpQty('beef', -1)">&#8722;</button>
-                  <span class="birria-qty-num" id="empBeefQty">1</span>
-                  <button class="qty-btn" onclick="changeEmpQty('beef', 1)">+</button>
-                </div>
-              </div>
-              <div class="birria-type-ctrl">
-                <span class="birria-type-label">Jerk Chicken</span>
-                <div class="qty-ctrl">
-                  <button class="qty-btn" onclick="changeEmpQty('jerk', -1)">&#8722;</button>
-                  <span class="birria-qty-num" id="empJerkQty">1</span>
-                  <button class="qty-btn" onclick="changeEmpQty('jerk', 1)">+</button>
-                </div>
-              </div>
-              <button class="add-btn" onclick="addEmpanadas()">+ Add to Order</button>
-            </div>
+            <span class="food-detail" style="margin-bottom:16px; display:block;">Buffalo Chicken · Beef &amp; Cheese · Jerk Chicken</span>
+            <button class="add-btn" onclick="openOrderModal()">Order Now</button>
           </div>
           <div class="food-card food-card-wings" data-order-custom="birria">
             <div class="food-card-top">
@@ -209,25 +183,7 @@
               <span class="food-price">4 for $15</span>
             </div>
             <span class="food-detail" style="margin-bottom:16px; display:block;">Cheese · cilantro · onions · sliced lime</span>
-            <div class="birria-order-row">
-              <div class="birria-type-ctrl">
-                <span class="birria-type-label">Chicken</span>
-                <div class="qty-ctrl">
-                  <button class="qty-btn" onclick="changeBirriaQty('chicken', -1)">&#8722;</button>
-                  <span class="birria-qty-num" id="birriaChickenQty">2</span>
-                  <button class="qty-btn" onclick="changeBirriaQty('chicken', 1)">+</button>
-                </div>
-              </div>
-              <div class="birria-type-ctrl">
-                <span class="birria-type-label">Beef</span>
-                <div class="qty-ctrl">
-                  <button class="qty-btn" onclick="changeBirriaQty('beef', -1)">&#8722;</button>
-                  <span class="birria-qty-num" id="birriaBeefQty">2</span>
-                  <button class="qty-btn" onclick="changeBirriaQty('beef', 1)">+</button>
-                </div>
-              </div>
-              <button class="add-btn" onclick="addBirria()">+ Add to Order</button>
-            </div>
+            <button class="add-btn" onclick="openOrderModal()">Order Now</button>
           </div>
         </div>
       </div>
@@ -255,24 +211,7 @@
               <span class="sauce-tag sauce-tag-red">Sweet Boss Sauce</span>
               <span class="sauce-tag sauce-tag-red">Barbecue House Sauce</span>
             </div>
-            <div class="wings-order-row">
-              <select class="form-input wings-sauce-sel" id="wingsSauce">
-                <option value="">Choose a sauce...</option>
-                <option>Garlic</option>
-                <option>Buffalo Parm Garlic</option>
-                <option>Parmesan</option>
-                <option>Buffalo Mild</option>
-                <option>Country</option>
-                <option>Sweet Boss Sauce</option>
-                <option>Barbecue House Sauce</option>
-              </select>
-              <div class="qty-ctrl">
-                <button class="qty-btn" onclick="changeWingsQty(-1)">&#8722;</button>
-                <span id="wingsQty">6</span>
-                <button class="qty-btn" onclick="changeWingsQty(1)">+</button>
-              </div>
-              <button class="add-btn add-btn-wings" onclick="addWings()">+ Add Wings</button>
-            </div>
+            <button class="add-btn" onclick="openOrderModal()">Order Now</button>
           </div>
         </div>
       </div>
@@ -403,116 +342,6 @@
         <input type="text" class="form-input" placeholder="Anything you need...">
       </div>
       <button class="form-submit" onclick="submitForm()">Send My Request</button>
-    </div>
-  </div>
-
-  <!-- CART FLOAT BUTTON -->
-  <button class="cart-float" id="cartBtn" onclick="openOrderModal()">
-    Order Online &middot; <span id="cartCount">0</span> items &middot; $<span id="cartTotal">0.00</span>
-  </button>
-
-  <!-- ORDER MODAL -->
-  <div class="modal-overlay" id="orderOverlay" onclick="handleOrderOverlayClick(event)">
-    <div class="modal order-modal">
-      <button class="modal-close" onclick="closeOrderModal()">&#10005;</button>
-
-      <!-- Step 1: Cart Review -->
-      <div class="order-step" id="orderStep1">
-        <h2 class="modal-title">Your Order</h2>
-        <p class="modal-sub">Review your items before checkout.</p>
-        <div id="cartItems" class="cart-items-list"></div>
-        <div class="order-total-row">
-          <span>Total</span>
-          <span class="order-total-val">$<span id="orderTotalDisp">0.00</span></span>
-        </div>
-        <button class="form-submit" id="cartContinueBtn" onclick="goToStep(2)">Pickup Details &#8594;</button>
-      </div>
-
-      <!-- Step 2: Pickup Info -->
-      <div class="order-step" id="orderStep2" style="display:none">
-        <h2 class="modal-title">Pickup Info</h2>
-        <p class="modal-sub">We&rsquo;ll have it hot &amp; ready when you arrive.</p>
-        <div class="form-group">
-          <label class="form-label">Your Name</label>
-          <input type="text" class="form-input" id="pickupName" placeholder="Full name">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Phone Number</label>
-          <input type="tel" class="form-input" id="pickupPhone" placeholder="(000) 000-0000">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Pickup Time</label>
-          <select class="form-input" id="pickupTime">
-            <option value="ASAP (~15 min)">ASAP (~15 min)</option>
-            <option value="~30 minutes">~30 minutes</option>
-            <option value="~45 minutes">~45 minutes</option>
-            <option value="~1 hour">~1 hour</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Special Notes</label>
-          <input type="text" class="form-input" id="pickupNotes" placeholder="Allergies, modifications...">
-        </div>
-        <div class="order-btn-row">
-          <button class="form-submit order-btn-back" onclick="goToStep(1)">&#8592; Back</button>
-          <button class="form-submit order-btn-fwd" onclick="goToStep(3)">Payment &#8594;</button>
-        </div>
-      </div>
-
-      <!-- Step 3: Payment -->
-      <div class="order-step" id="orderStep3" style="display:none">
-        <h2 class="modal-title">Payment</h2>
-        <p class="modal-sub">Order total: $<span id="payTotalDisp">0.00</span></p>
-        <div class="form-group">
-          <label class="form-label">Name on Card</label>
-          <input type="text" class="form-input" id="cardName" placeholder="Full name">
-        </div>
-        <div class="form-group">
-          <label class="form-label">Card Number</label>
-          <input type="text" class="form-input" id="cardNumber" placeholder="0000 0000 0000 0000" maxlength="19" oninput="fmtCard(this)">
-        </div>
-        <div class="form-row">
-          <div class="form-group">
-            <label class="form-label">Expiry</label>
-            <input type="text" class="form-input" id="cardExp" placeholder="MM / YY" maxlength="7" oninput="fmtExp(this)">
-          </div>
-          <div class="form-group">
-            <label class="form-label">CVV</label>
-            <input type="text" class="form-input" id="cardCvv" placeholder="000" maxlength="4">
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="form-label">Billing ZIP</label>
-          <input type="text" class="form-input" id="cardZip" placeholder="00000" maxlength="5">
-        </div>
-        <div class="order-btn-row">
-          <button class="form-submit order-btn-back" onclick="goToStep(2)">&#8592; Back</button>
-          <button class="form-submit order-btn-fwd" id="placeOrderBtn" onclick="placeOrder()">Place Order &#8594;</button>
-        </div>
-      </div>
-
-      <!-- Step 4: Confirmation -->
-      <div class="order-step" id="orderStep4" style="display:none">
-        <div style="text-align:center; padding:20px 0;">
-          <div class="confirm-icon">&#10003;</div>
-          <h2 class="modal-title">Order Placed!</h2>
-          <p class="modal-sub">Head on over &mdash; we&rsquo;ll have it ready for pickup.</p>
-          <div class="confirm-detail">
-            <p class="confirm-label">Order Number</p>
-            <p class="confirm-val" id="confirmOrderNum">RC-0000</p>
-          </div>
-          <div class="confirm-detail">
-            <p class="confirm-label">Pickup Time</p>
-            <p class="confirm-val" id="confirmPickupTime">ASAP</p>
-          </div>
-          <div class="confirm-detail">
-            <p class="confirm-label">Total Charged</p>
-            <p class="confirm-val" id="confirmTotal">$0.00</p>
-          </div>
-          <button class="form-submit" style="margin-top:28px" onclick="closeOrderModal()">Done</button>
-        </div>
-      </div>
-
     </div>
   </div>
 
